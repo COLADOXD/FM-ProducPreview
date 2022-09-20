@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+
 }
 
 html {
@@ -20,21 +21,29 @@ section {
     width: 800px;
     background-color: white;
     display: flex;
-    justify-content: center;
     align-content: center;
-    border-radius: 8px;
+    border-radius: 18px;
+    font-family: Montserrat;
 }
 
 .image {
-    width: 300px;
+    width: 400px;
     height: 600px;
-    border-radius: 4px;
+    border-radius: 18px 0px 0px 18px;
 }
 
 .contenido {
-
     margin-left: 30px;
+    font-size: 20px;
 }
 
+.perfume {
+    font-size: Fraunces;
+    color: #c7c7ca;
+}
+
+.extra {
+    font-size: 14px; 
+}
 
 
