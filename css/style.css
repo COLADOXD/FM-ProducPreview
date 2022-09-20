@@ -38,12 +38,38 @@ section {
 }
 
 .perfume {
-    font-size: Fraunces;
+    font-family: Fraunces;
     color: #c7c7ca;
+    margin: 20px 0px;
+    font-size: 18px;
 }
 
 .extra {
-    font-size: 14px; 
+    padding-top: 20px;
+    font-size: 18px; 
+    color: #c7c7ca;
 }
 
+.titulo {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.precio {
+    display: flex;
+    padding: 20px 0px 20px 0px;
+    align-items: center;
+}
+
+.venta{
+    padding-right: 20px;
+    color: rgba(79,127,106,255);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.mentira {
+    text-decoration: line-through;
+    color: #c7c7ca;
+}
 
