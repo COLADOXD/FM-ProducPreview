@@ -11,13 +11,17 @@ html {
 
 body {
     background-color: #f2eee5;
+}
+
+main {
+    background-color: #f2eee5;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-section {
+.todo {
     width: 800px;
     background-color: white;
     display: flex;
@@ -26,15 +30,20 @@ section {
     font-family: Montserrat;
 }
 
-.image {
-    width: 400px;
-    height: 100%;
+.image2 {
+    display: none;
+}
+
+.image1 {
+    /* width: 400px; */
+    /* height: 100%; */
     border-radius: 18px 0px 0px 18px;
 }
 
 .contenido {
     margin-left: 30px;
     font-size: 20px;
+    flex: 1;
 }
 
 .perfume {
@@ -93,10 +102,37 @@ button > img {
 .conteiner {
     padding-top: 30px;
     padding-bottom: 20px;
+    flex: 1;
+}
 
+figure {
+    flex: 1;
 }
 
 button > p {
     font-size: 20px;
     color: white;
+}
+
+@media(max-width: 830px)  {
+
+    .todo {
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* width: 600px; */
+       
+  align-items: flex-start;
+        
+        margin: 50px;
+    }
+    
+    .image1 {
+        display: none;
+    }
+
+    .image2 {
+        display: block;
+        width: 100%;
+        border-radius: 18px 18px 0px 0px;
+    }
 }
