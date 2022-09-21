@@ -1,138 +1,124 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
-    font-size: 62.5%;
-}
-
-body {
-    background-color: #f2eee5;
-}
-
-main {
-    background-color: #f2eee5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.todo {
-    width: 800px;
-    background-color: white;
-    display: flex;
-    align-content: center;
-    border-radius: 18px;
-    font-family: Montserrat;
-}
-
-.image2 {
-    display: none;
-}
-
-.image1 {
-    /* width: 400px; */
-    /* height: 100%; */
-    border-radius: 18px 0px 0px 18px;
-}
-
-.contenido {
-    margin-left: 30px;
-    font-size: 20px;
-    flex: 1;
+  font-size: 62.5%;
 }
 
 .perfume {
-    font-family: Fraunces;
-    color: #c7c7ca;
-    margin: 20px 0px;
-    font-size: 22px;
+  font-family: "Fraunces", serif;
+  color: #c7c7ca;
+  margin: 20px 0px;
+  font-size: 22px;
 }
 
 .extra {
-    padding-top: 20px;
-    font-size: 22px; 
-    color: #c7c7ca;
+  padding-top: 20px;
+  font-size: 22px;
+  color: #c7c7ca;
 }
 
 .titulo {
-    font-size: 55px;
-    font-weight: bold;
+  font-size: 55px;
+  font-weight: bold;
 }
 
 .precio {
-    display: flex;
-    padding: 30px 0px 20px 0px;
-    align-items: center;
+  display: flex;
+  padding: 30px 0px 20px 0px;
+  align-items: center;
 }
 
-.venta{
-    padding-right: 20px;
-    color: rgba(79,127,106,255);
-    font-weight: bold;
-    font-size: 40px;
+.venta {
+  padding-right: 20px;
+  color: rgba(79, 127, 106, 255);
+  font-weight: bold;
+  font-size: 40px;
 }
 
 .mentira {
-    text-decoration: line-through;
-    color: #c7c7ca;
+  text-decoration: line-through;
+  color: #c7c7ca;
 }
 
 #carrito {
-    height: 81px;
-    width: 302px;
-    border-radius: 18px;
-    border: 15px solid rgba(0, 0, 0, 0);
-    background-color: #4f806a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+  height: 81px;
+  width: 302px;
+  border-radius: 18px;
+  border: 15px solid rgba(0, 0, 0, 0);
+  background-color: #4f806a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button > img {
-    padding-right: 10px;
-    height: 20px;
-    
+  padding-right: 10px;
+  height: 20px;
 }
 .conteiner {
-    padding-top: 30px;
-    padding-bottom: 20px;
-    flex: 1;
-}
-
-figure {
-    flex: 1;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 button > p {
-    font-size: 20px;
-    color: white;
+  font-size: 20px;
+  color: white;
 }
 
-@media(max-width: 830px)  {
+body {
+  background-color: #f2eee5;
+}
+main {
+  background-color: #f2eee5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 60px;
+}
 
-    .todo {
-        display: flex;
-        /* flex-wrap: wrap; */
-        /* width: 600px; */
-       
-  align-items: flex-start;
-        
-        margin: 50px;
-    }
-    
-    .image1 {
-        display: none;
-    }
+figure {
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/image-product-desktop.jpg");
+  border-radius: 18px 0px 0px 18px;
+}
 
-    .image2 {
-        display: block;
-        width: 100%;
-        border-radius: 18px 18px 0px 0px;
-    }
+.todo {
+  width: 800px;
+  /* height: 600px; */
+
+  background-color: white;
+  display: flex;
+  border-radius: 18px;
+  font-family: Montserrat;
+}
+
+figure {
+  flex: 1;
+}
+
+.contenido {
+  padding: 20px;
+  flex: 1;
+}
+@media (max-width: 830px) {
+  .todo {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+  }
+  figure {
+    flex: 1;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../images/image-product-mobile.jpg");
+    border-radius: 18px 0px 0px 18px;
+  }
 }
